@@ -193,30 +193,41 @@ st.markdown(
     hr { border-color: #2e383e !important; margin: 20px 0 !important; }
 
     .b3da-watermark {
-    position: fixed;
-    top: 10px;
-    right: 14px;
-    z-index: 9999;
-    font-family: 'Nunito', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.3px;
-    color: #8394a0 !important;
-    opacity: 0.75;
+    position: fixed !important;
+    right: 20px !important;
+    bottom: 20px !important;
+    z-index: 2147483647 !important;
+    display: block !important;
+    padding: 8px 13px !important;
+    background: #182730 !important;
+    border: 2px solid #1cb0f6 !important;
+    border-radius: 999px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.38) !important;
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.3px !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
     text-decoration: none !important;
-    transition: opacity 0.15s ease;
+    transition: transform 0.15s ease, background-color 0.15s ease !important;
 }
 
 .b3da-watermark:hover {
-    opacity: 0.95;
-    color: #1cb0f6 !important;
-} </style>
+    color: #ffffff !important;
+    background: #1cb0f6 !important;
+    transform: translateY(-2px) !important;
+}
+@media (max-width: 640px) {
+    .b3da-watermark { right: 12px !important; bottom: 12px !important; }
+}
+</style>
     """,
     unsafe_allow_html=True,
 )
 
 st.markdown(
-    '<a class="b3da-watermark" href="https://www.instagram.com/alxxr.mrqz/" target="_blank">@alxxr.mrqz</a>',
+    '<a class="b3da-watermark" href="https://www.instagram.com/alxxr.mrqz/" target="_blank" rel="noopener noreferrer">@alxxr.mrqz</a>',
     unsafe_allow_html=True,
 )
 
