@@ -194,7 +194,7 @@ st.markdown(
 
     .b3da-watermark {
     position: fixed !important;
-    right: 20px !important;
+    left: 20px !important;
     bottom: 20px !important;
     z-index: 2147483647 !important;
     display: block !important;
@@ -219,7 +219,7 @@ st.markdown(
     transform: translateY(-2px) !important;
 }
 @media (max-width: 640px) {
-    .b3da-watermark { right: 12px !important; bottom: 12px !important; }
+    .b3da-watermark { left: 12px !important; bottom: 12px !important; }
 }
 </style>
     """,
