@@ -193,21 +193,24 @@ st.markdown(
     hr { border-color: #2e383e !important; margin: 20px 0 !important; }
 
     .b3da-watermark {
-        position: fixed;
-        bottom: 10px;
-        right: 14px;
-        z-index: 9999;
-        font-family: 'Nunito', sans-serif;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 0.3px;
-        color: #8394a0 !important;
-        opacity: 0.55;
-        text-decoration: none !important;
-        transition: opacity 0.15s ease;
-    }
-    .b3da-watermark:hover { opacity: 0.95; color: #1cb0f6 !important; }
-    </style>
+    position: fixed;
+    top: 10px;
+    right: 14px;
+    z-index: 9999;
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #8394a0 !important;
+    opacity: 0.75;
+    text-decoration: none !important;
+    transition: opacity 0.15s ease;
+}
+
+.b3da-watermark:hover {
+    opacity: 0.95;
+    color: #1cb0f6 !important;
+} </style>
     """,
     unsafe_allow_html=True,
 )
